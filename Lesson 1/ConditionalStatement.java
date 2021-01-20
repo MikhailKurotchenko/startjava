@@ -1,15 +1,11 @@
 public class ConditionalStatement {
      public static void main(String[] args) {
         int age = 21;
-        char sex = 'F';
-        int growth = 181;
-        char firstCharOfName = 'N';
-        boolean tr = true;
-        boolean fls = false;
         if(age > 20) {
-            System.out.println(tr);
+            System.out.println(true);
         }
 
+        char sex = 'F';
         if(sex == 'M') {
             System.out.println('M');
         }
@@ -18,20 +14,20 @@ public class ConditionalStatement {
             System.out.println(sex);
         }
 
+        int growth = 181;
         if(growth < 180) {
-            System.out.println(fls);
-        } 
-        else {
-            System.out.println(tr);
+            System.out.println(false);
+        } else {
+            System.out.println(true);
         }
 
-        if(firstCharOfName == 'M') {
+        char firstNameLetter = 'N';
+        if(firstNameLetter == 'M') {
             System.out.println('M');
-        } else if(firstCharOfName == 'I') {
+        } else if(firstNameLetter == 'I') {
             System.out.println('I');
-        }
-        else {
-            System.out.println(firstCharOfName);
+        } else {
+            System.out.println(firstNameLetter);
         }
     }
 }
