@@ -1,8 +1,9 @@
 public class ConditionalStatement {
      public static void main(String[] args) {
         int age = 21;
+        boolean isOverTwenty = true;
         if(age > 20) {
-            System.out.println(true);
+            System.out.println(isOverTwenty);
         }
 
         char sex = 'F';
@@ -15,10 +16,12 @@ public class ConditionalStatement {
         }
 
         int growth = 181;
+        boolean isTaller = true;
+        boolean isNotTaller = false;
         if(growth < 180) {
-            System.out.println(false);
+            System.out.println(isNotTaller);
         } else {
-            System.out.println(true);
+            System.out.println(isTaller);
         }
 
         char firstNameLetter = 'N';
