@@ -1,36 +1,33 @@
 public class ConditionalStatement {
      public static void main(String[] args) {
         int age = 21;
-        boolean isOverTwenty = true;
         if(age > 20) {
-            System.out.println(isOverTwenty);
+            System.out.println("Вы старше 20 лет");
         }
 
         char sex = 'F';
         if(sex == 'M') {
-            System.out.println('M');
+            System.out.println("Вы мужчина");
         }
 
         if(sex != 'M') {
-            System.out.println(sex);
+            System.out.println("Вы женщина");
         }
 
         int growth = 181;
-        boolean isTaller = true;
-        boolean isNotTaller = false;
         if(growth < 180) {
-            System.out.println(isNotTaller);
+            System.out.println("Вы невысокий человек");
         } else {
-            System.out.println(isTaller);
+            System.out.println("Вы высокий человек");
         }
 
         char firstNameLetter = 'N';
         if(firstNameLetter == 'M') {
-            System.out.println('M');
+            System.out.println("Ваше имя начинается на 'M'");
         } else if(firstNameLetter == 'I') {
-            System.out.println('I');
+            System.out.println("Ваше имя начинается на 'I'");
         } else {
-            System.out.println(firstNameLetter);
+            System.out.println("Ваше имя начинается на " + firstNameLetter);
         }
     }
 }

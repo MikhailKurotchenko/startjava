@@ -1,6 +1,6 @@
 public class MyFirstGame {
      public static void main(String[] args) {
-        int computer = 20;
+        int computer = -1;
         int user = 10;
         if(computer > 0 & computer <= 100) {
             if(computer > user) {
@@ -17,6 +17,8 @@ public class MyFirstGame {
 
             System.out.println("Вы угадали!");
 
+        } else {
+            System.out.println("Ошибка: значение computer должно быть в диапазоне (0;100]");
         }
     }
 }

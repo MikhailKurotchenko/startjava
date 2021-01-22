@@ -1,10 +1,9 @@
 public class Calculator {
     public static void main(String[] args) {
-        int firstNumb = 2;
+        int firstNumb = 3;
         char symbol = '^';
         int secondNumb = 6;
-        int resultForRank = 1;
-        if(firstNumb >= 0 & secondNumb >= 0) {
+        if(firstNumb >= 0 && secondNumb >= 0) {
             if(symbol == '+') {
                 System.out.println(firstNumb + secondNumb);
             } else if(symbol == '-') {
@@ -14,13 +13,16 @@ public class Calculator {
             } else if(symbol == '/') {
                 System.out.println(firstNumb / secondNumb);
             } else if(symbol == '^') {
+                int result = 1;
                 for(int i = 1; i <= secondNumb; i++) {
-                    resultForRank = resultForRank * firstNumb;
+                    result *= firstNumb;
                 }
-                System.out.println(resultForRank);
+                System.out.println(result);
             } else if(symbol == '%') {
                 System.out.println(firstNumb % secondNumb);
             }
-        }    
+        } else {
+            System.out.println("Ошибка: введены отрицательные числа");
+        }   
     }
 }
