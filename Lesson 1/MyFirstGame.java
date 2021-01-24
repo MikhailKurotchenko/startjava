@@ -5,20 +5,20 @@ public class MyFirstGame {
         if(computerNum > 0 & computerNum <= 100) {
             if(computerNum > userNum) {
                 while(computerNum > userNum) {
-                    System.out.println("Введенное вами число меньше того, что загадал компьютер");
+                    System.out.println("Р’РІРµРґРµРЅРЅРѕРµ РІР°РјРё С‡РёСЃР»Рѕ РјРµРЅСЊС€Рµ С‚РѕРіРѕ, С‡С‚Рѕ Р·Р°РіР°РґР°Р» РєРѕРјРїСЊСЋС‚РµСЂ");
                     userNum++;
                 }
             } else if(computerNum < userNum) {
                 while(computerNum < userNum) {
-                    System.out.println("Введенное вами число больше того, что загадал компьютер");
+                    System.out.println("Р’РІРµРґРµРЅРЅРѕРµ РІР°РјРё С‡РёСЃР»Рѕ Р±РѕР»СЊС€Рµ С‚РѕРіРѕ, С‡С‚Рѕ Р·Р°РіР°РґР°Р» РєРѕРјРїСЊСЋС‚РµСЂ");
                     userNum--;
                 }
             }
 
-            System.out.println("Вы угадали!");
+            System.out.println("Р’С‹ СѓРіР°РґР°Р»Рё!");
 
         } else {
-            System.out.println("Ошибка: значение computerNum должно быть в диапазоне (0;100]");
+            System.out.println("РћС€РёР±РєР°: Р·РЅР°С‡РµРЅРёРµ computerNum РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РІ РґРёР°РїР°Р·РѕРЅРµ (0;100]");
         }
     }
 }
