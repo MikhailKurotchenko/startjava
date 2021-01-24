@@ -1,28 +1,29 @@
 public class Calculator {
     public static void main(String[] args) {
-        int firstNumb = 3;
-        char symbol = '^';
-        int secondNumb = 6;
-        if(firstNumb >= 0 && secondNumb >= 0) {
-            if(symbol == '+') {
-                System.out.println(firstNumb + secondNumb);
-            } else if(symbol == '-') {
-                System.out.println(firstNumb - secondNumb);
-            } else if(symbol == '*') {
-                System.out.println(firstNumb * secondNumb);
-            } else if(symbol == '/') {
-                System.out.println(firstNumb / secondNumb);
-            } else if(symbol == '^') {
+        int firstNum = 3;
+        char operation = '^';
+        int secondNum = 6;
+
+        if(firstNum >= 0 && secondNum >= 0) {
+            if(operation == '+') {
+                System.out.println(firstNum + secondNum);
+            } else if(operation == '-') {
+                System.out.println(firstNum - secondNum);
+            } else if(operation == '*') {
+                System.out.println(firstNum * secondNum);
+            } else if(operation == '/') {
+                System.out.println(firstNum / secondNum);
+            } else if(operation == '^') {
                 int result = 1;
-                for(int i = 1; i <= secondNumb; i++) {
-                    result *= firstNumb;
+                for(int i = 1; i <= secondNum; i++) {
+                    result *= firstNum;
                 }
                 System.out.println(result);
-            } else if(symbol == '%') {
-                System.out.println(firstNumb % secondNumb);
+            } else if(operation == '%') {
+                System.out.println(firstNum % secondNum);
             }
         } else {
-            System.out.println("Ошибка: введены отрицательные числа");
-        }   
+            System.out.println("Ошибка: оба числа должны быть положительными");
+        }
     }
 }
