@@ -23,7 +23,7 @@ public class Calculator {
                 System.out.println(firstNum % secondNum);
             }
         } else {
-            System.out.println("Ошибка: оба числа должны быть положительными");
+            System.out.println("РћС€РёР±РєР°: РѕР±Р° С‡РёСЃР»Р° РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё");
         }
     }
 }
