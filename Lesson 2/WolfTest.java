@@ -4,14 +4,14 @@ public class WolfTest {
 
         System.out.println(wolfOne.getSex());
 
-        wolfOne.setName("Uoa");
+        wolfOne.setName("Zxy");
         System.out.println(wolfOne.getName());
 
         System.out.println(wolfOne.getColor());
 
         System.out.println(wolfOne.getWeight());
 
-        wolfOne.setAge(45);
-        wolfOne.getAge();
+        wolfOne.setAge(6);
+        System.out.println(wolfOne.getAge());
     }
 }

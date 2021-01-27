@@ -1,14 +1,19 @@
 public class Wolf {
 
     private String sex = "Male";
+    private String name = "Tuzik";
+    private String color = "Grey";
+    private int weight = 40;
+    private int age = 4;
+
     public String getSex() {
         return sex;
     }
 
-    private String name;
-    public String getName(){
+    public String getName() {
         return name;
     }
+
     void setName(String name) {
         if (name == "") {
             System.out.println("Пустая строка");
@@ -17,25 +22,23 @@ public class Wolf {
         }
     }
 
-    private String color = "Grey";
     public String getColor() {
         return color;
     }
 
-    private int weight = 40;
     public int getWeight() {
         return weight;
     }
 
-    private int age;
     public int getAge() {
         return age;
     }
+
     void setAge(int age) {
         if(age > 8) {
             System.out.println("Некорректный возраст");
         } else {
-            System.out.println(age);
+            this.age = age;
         }
     }
 
