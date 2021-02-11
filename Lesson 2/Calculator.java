@@ -20,35 +20,34 @@ public class Calculator {
     }
 
     public void setOperation(String operation) {
+        this.operation = operation;
+    }
+
+    int result = 0;
+    public int calculations() {
         switch(operation) {
             case "+":
-                System.out.println(firstNum + secondNum);
-                this.operation = operation;
+                result = firstNum + secondNum;
                 break;
             case "-":
-                System.out.println(firstNum - secondNum);
-                this.operation = operation;
+                result = firstNum - secondNum;
                 break;
             case "*":
-                System.out.println(firstNum * secondNum);
-                this.operation = operation;
+                result = firstNum * secondNum;
                 break;
             case "/":
-                System.out.println(firstNum / secondNum);
-                this.operation = operation;
+                result = firstNum / secondNum;
                 break;
             case "^":
-                int result = 1;
+                result = 1;
                 for(int i = 1; i <= secondNum; i++) {
                     result *= firstNum;
                 }
-                System.out.println(result);
-                this.operation = operation;
                 break;
             case "%":
-                System.out.println(firstNum % secondNum);
-                this.operation = operation;
+                result = firstNum % secondNum;
                 break;
         }
+        return result;
     }
 }    

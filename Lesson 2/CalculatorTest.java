@@ -15,6 +15,7 @@ public class CalculatorTest {
             scan.nextLine();
             System.out.print("Enter a math operation sign: ");
             calculate.setOperation(scan.nextLine());
+            System.out.println(calculate.calculations());
 
             do {
                 System.out.print("Want to continue computing? [yes/no]: ");
