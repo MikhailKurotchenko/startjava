@@ -23,8 +23,8 @@ public class Calculator {
         this.operation = operation;
     }
 
-    int result = 0;
-    public int calculations() {
+    public int calculate() {
+        int result = 0;
         switch(operation) {
             case "+":
                 result = firstNum + secondNum;
