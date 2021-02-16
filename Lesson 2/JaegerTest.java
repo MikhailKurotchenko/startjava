@@ -1,66 +1,42 @@
 public class JaegerTest {
     public static void main(String[] args) {
-        Jaeger jager1 = new Jaeger();
-        Jaeger jager2 = new Jaeger();
+        Jaeger jager1 = new Jaeger("Gipsy Danger", "Mark-3", "USA", 79.25f, 1.980f, 7, 8, 6);
+        Jaeger jager2 = new Jaeger("Coyote Tango", "Mark-1", "Japan", 85.34f, 2.312f, 5, 7, 4);
 
-        jager1.setModelName("Gipsy Danger");
-        System.out.println(jager1.getModelName());
+        System.out.println(jager1.modelName);
 
-        jager1.setMark("Mark-3");
-        System.out.println(jager1.getMark());
+        System.out.println(jager1.mark);
 
-        jager1.setOrigin("USA");
-        System.out.println(jager1.getOrigin());
+        System.out.println(jager1.origin);
 
-        jager1.setHeight(79.25f);
-        System.out.println(jager1.getHeight());
+        System.out.println(jager1.height);
 
-        jager1.setWeight(1.980f);
-        System.out.println(jager1.getWeight());
+        System.out.println(jager1.weight);
 
-        jager1.setSpeed(7);
-        System.out.println(jager1.getSpeed());
+        System.out.println(jager1.speed);
 
-        jager1.setStrengh(8);
-        System.out.println(jager1.getStrengh());
+        System.out.println(jager1.strengh);
 
-        jager1.setArmor(6);
-        System.out.println(jager1.getArmor());
-
-        System.out.println(jager1.drift());
-
-        jager1.move();
+        System.out.println(jager1.armor);
 
 
         System.out.println("");
 
 
-        jager2.setModelName("Coyote Tango");
-        System.out.println(jager2.getModelName());
+        System.out.println(jager2.modelName);
 
-        jager2.setMark("Mark-1");
-        System.out.println(jager2.getMark());
+        System.out.println(jager2.mark);
 
-        jager2.setOrigin("Japan");
-        System.out.println(jager2.getOrigin());
+        System.out.println(jager2.origin);
 
-        jager2.setHeight(85.34f);
-        System.out.println(jager2.getHeight());
+        System.out.println(jager2.height);
 
-        jager2.setWeight(2.312f);
-        System.out.println(jager2.getWeight());
+        System.out.println(jager2.weight);
 
-        jager2.setSpeed(5);
-        System.out.println(jager2.getSpeed());
+        System.out.println(jager2.speed);
 
-        jager2.setStrengh(7);
-        System.out.println(jager2.getStrengh());
-
-        jager2.setArmor(4);
-        System.out.println(jager2.getArmor());
-
-        System.out.println(jager2.scanKaiju());
-
-        jager2.useVortexCannon();
+        System.out.println(jager2.strengh);
+        
+        System.out.println(jager2.armor);
     }
 }
