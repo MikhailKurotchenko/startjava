@@ -1,15 +1,14 @@
 public class Jaeger {
-    public String modelName;
-    public String mark;
-    public String origin;
-    public float height;
-    public float weight;
-    public int speed;
-    public int strengh;
-    public int armor;
+    private String modelName;
+    private String mark;
+    private String origin;
+    private float height;
+    private float weight;
+    private int speed;
+    private int strengh;
+    private int armor;
 
-    public Jaeger(String modelName, String mark, String origin,
-float height, float weight, int speed, int strengh, int armor) {
+    public Jaeger(String modelName, String mark, String origin, float height, float weight, int speed, int strengh, int armor) {
         this.modelName = modelName;
         this.mark = mark;
         this.origin = origin;
@@ -18,6 +17,38 @@ float height, float weight, int speed, int strengh, int armor) {
         this.speed = speed;
         this.strengh = strengh;
         this.armor = armor;
+    }
+
+    public String getModelName() {
+        return modelName;
+    }
+
+    public String getMark() {
+        return mark;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public int getStrengh() {
+        return strengh;
+    }
+
+    public int getArmor() {
+        return armor;
     }
 
     public boolean drift() {
