@@ -4,8 +4,8 @@ import java.util.Random;
 public class GuessNumber {
     Scanner scan = new Scanner(System.in);
     Random rand = new Random();
-    Player player1;
-    Player player2;
+    private Player player1;
+    private Player player2;
 
     public GuessNumber(Player player1, Player player2) {
         this.player1 = player1;
@@ -13,29 +13,36 @@ public class GuessNumber {
     }
 
     public void guess() {
-        int computerNum = rand.nextInt(100) + 1;
-        do {System.out.println(computerNum);
-            System.out.print("1 игрок вводит число: ");
-            player1.setNumber(scan.nextInt());
-            if(player1.getNumber() > computerNum && player1.getNumber() > 0 && player1.getNumber() <= 100) {
+        int randomNum = rand.nextInt(100) + 1;
+        do {
+            do {
+                System.out.print(player1.getName() + " вводит число: ");
+            } while(player1.setNumber(scan.nextInt()) == false); 
+            if(player1.getNumber() > randomNum) {
                 System.out.println("Число больше компьютера");
-            } else if(player1.getNumber() < computerNum && player1.getNumber() > 0 && player1.getNumber() <= 100) {
+            } else if(player1.getNumber() < randomNum) {
                 System.out.println("Число меньше компьютера");
+            } else if(player1.getNumber() == randomNum) {
+                break;
             }
 
-            System.out.print("2 игрок вводит число: ");
-            player2.setNumber(scan.nextInt());
-            if(player2.getNumber() > computerNum && player2.getNumber() > 0 && player2.getNumber() <= 100) {
-                System.out.println("Число больше компьютера");
-            } else if(player2.getNumber() < computerNum && player2.getNumber() > 0 && player2.getNumber() <= 100) {
-                System.out.println("Число меньше компьютера");
-            } 
-        } while(player1.getNumber() != computerNum && player2.getNumber() != computerNum);
 
-        if(player1.getNumber() == computerNum) {
-            System.out.println("Победил player1");
+            do {
+                System.out.print(player2.getName() + " вводит число: ");
+            } while(player2.setNumber(scan.nextInt()) == false);  
+            if(player2.getNumber() > randomNum) {
+                System.out.println("Число больше компьютера");
+            } else if(player2.getNumber() < randomNum) {
+                System.out.println("Число меньше компьютера");
+            } else if(player2.getNumber() == randomNum) {
+                break;
+                } 
+        } while(true);
+
+        if(player1.getNumber() == randomNum) {
+            System.out.println("Победил " + player1.getName());
         } else {
-            System.out.println("Победил player1");
+            System.out.println("Победил " + player2.getName());
         }
     }
 }
