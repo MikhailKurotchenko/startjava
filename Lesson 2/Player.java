@@ -6,11 +6,16 @@ public class Player {
         this.name = name;
     }
 
+
+    public String getName() {
+        return name;
+    }
+
     public boolean setNumber(int number) {
         if(number <= 0 || number > 100) {
             System.out.println("Ошибка: число должно быть в диапазоне (0; 100]");
             return false;
-        } else {
+        } {
             this.number = number;
             return true;
         }
@@ -18,9 +23,5 @@ public class Player {
 
     public int getNumber() {
         return number;
-    }
-
-     public String getName() {
-        return name;
     }
 }

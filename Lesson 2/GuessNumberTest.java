@@ -17,5 +17,4 @@ public class GuessNumberTest {
             } while(!"yes".equals(choice) && !"no".equals(choice));
         } while(choice.equals("yes"));
     }
-    
 }

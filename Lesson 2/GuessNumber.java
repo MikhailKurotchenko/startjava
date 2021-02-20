@@ -17,32 +17,27 @@ public class GuessNumber {
         do {
             do {
                 System.out.print(player1.getName() + " вводит число: ");
-            } while(player1.setNumber(scan.nextInt()) == false); 
+            } while(!player1.setNumber(scan.nextInt())); 
             if(player1.getNumber() > randomNum) {
                 System.out.println("Число больше компьютера");
             } else if(player1.getNumber() < randomNum) {
                 System.out.println("Число меньше компьютера");
             } else if(player1.getNumber() == randomNum) {
+                System.out.println("Победил " + player1.getName());
                 break;
             }
 
-
             do {
                 System.out.print(player2.getName() + " вводит число: ");
-            } while(player2.setNumber(scan.nextInt()) == false);  
+            } while(!player2.setNumber(scan.nextInt()));  
             if(player2.getNumber() > randomNum) {
                 System.out.println("Число больше компьютера");
             } else if(player2.getNumber() < randomNum) {
                 System.out.println("Число меньше компьютера");
             } else if(player2.getNumber() == randomNum) {
+                System.out.println("Победил " + player2.getName());
                 break;
-                } 
+            }
         } while(true);
-
-        if(player1.getNumber() == randomNum) {
-            System.out.println("Победил " + player1.getName());
-        } else {
-            System.out.println("Победил " + player2.getName());
-        }
     }
 }
