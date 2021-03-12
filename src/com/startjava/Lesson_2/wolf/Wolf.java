@@ -1,3 +1,5 @@
+package com.startjava.Lesson_2.wolf;
+
 public class Wolf {
 
     private String sex = "Male";
@@ -15,7 +17,7 @@ public class Wolf {
     }
 
     void setName(String name) {
-        if (name == "") {
+        if(name == "") {
             System.out.println("Пустая строка");
         } else {
             this.name = name;

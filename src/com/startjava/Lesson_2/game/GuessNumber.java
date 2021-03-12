@@ -1,3 +1,5 @@
+package com.startjava.Lesson_2.game;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -16,26 +18,26 @@ public class GuessNumber {
         int randomNum = rand.nextInt(100) + 1;
         do {
             do {
-                System.out.print(player1.getName() + " РІРІРѕРґРёС‚ С‡РёСЃР»Рѕ: ");
+                System.out.print(player1.getName() + " вводит число: ");
             } while(!player1.setNumber(scan.nextInt())); 
             if(player1.getNumber() > randomNum) {
-                System.out.println("Р§РёСЃР»Рѕ Р±РѕР»СЊС€Рµ РєРѕРјРїСЊСЋС‚РµСЂР°");
+                System.out.println("Число больше компьютера");
             } else if(player1.getNumber() < randomNum) {
-                System.out.println("Р§РёСЃР»Рѕ РјРµРЅСЊС€Рµ РєРѕРјРїСЊСЋС‚РµСЂР°");
+                System.out.println("Число меньше компьютера");
             } else if(player1.getNumber() == randomNum) {
-                System.out.println("РџРѕР±РµРґРёР» " + player1.getName());
+                System.out.println("Победил " + player1.getName());
                 break;
             }
 
             do {
-                System.out.print(player2.getName() + " РІРІРѕРґРёС‚ С‡РёСЃР»Рѕ: ");
+                System.out.print(player2.getName() + " вводит число: ");
             } while(!player2.setNumber(scan.nextInt()));  
             if(player2.getNumber() > randomNum) {
-                System.out.println("Р§РёСЃР»Рѕ Р±РѕР»СЊС€Рµ РєРѕРјРїСЊСЋС‚РµСЂР°");
+                System.out.println("Число больше компьютера");
             } else if(player2.getNumber() < randomNum) {
-                System.out.println("Р§РёСЃР»Рѕ РјРµРЅСЊС€Рµ РєРѕРјРїСЊСЋС‚РµСЂР°");
+                System.out.println("Число меньше компьютера");
             } else if(player2.getNumber() == randomNum) {
-                System.out.println("РџРѕР±РµРґРёР» " + player2.getName());
+                System.out.println("Победил " + player2.getName());
                 break;
             }
         } while(true);
