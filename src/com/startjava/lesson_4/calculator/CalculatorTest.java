@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class CalculatorTest {
     public static void main(String[] args) {
-        Calculator calc = new Calculator();
         Scanner scan = new Scanner(System.in);
+        Calculator calc = new Calculator();
         String choice;
         do {
             System.out.print("Enter math expression through a space: ");
-            calc.setExample(scan.nextLine());
+            calc.setMathExpression(scan.nextLine());
             System.out.println(calc.calculate());
             do {
                 System.out.print("Want to continue computing? [yes/no]: ");
