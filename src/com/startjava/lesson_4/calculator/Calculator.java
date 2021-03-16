@@ -1,7 +1,6 @@
 package com.startjava.lesson_4.calculator;
 
 public class Calculator {
-    private String mathExpression;
     private int firstNum;
     private int secondNum;
     private String operation;
@@ -14,7 +13,6 @@ public class Calculator {
         if (firstNum < 0 || secondNum < 0) {
             System.out.println("Error: numbers must be greater than 0");
         } else {
-            this.mathExpression = mathExpression;
             this.firstNum = firstNum;
             this.secondNum = secondNum;
             this.operation = operation;
